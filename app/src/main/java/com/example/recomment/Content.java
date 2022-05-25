@@ -4,25 +4,25 @@ import com.google.gson.annotations.SerializedName;
 
 public class Content {
 
-    @SerializedName("thumbnail")
-    private String thumbnail;
+    @SerializedName("id")
+    private int thumbnail;
 
-    @SerializedName("title")
+    @SerializedName("name")
     private String title;
 
-    @SerializedName("content")
-    private String content;
+    @SerializedName("age")
+    private int content;
 
 
-    public Content(String thumbnail, String title, String content) {
+    public Content(int thumbnail, String title, int content) {
         this.thumbnail = thumbnail;
         this.title = title;
         this.content = content;
     }
 
-    public String getThumbnail() { return thumbnail; }
+    public int getThumbnail() { return thumbnail; }
     public String getTitle() { return title; }
-    public String getContent() {
+    public int getContent() {
         return content;
     }
 }

@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         call.enqueue(new Callback<List<Content>>() {
             @Override
             public void onResponse(Call<List<Content>> call, Response<List<Content>> response) {
+                System.out.println("responpon");
 
                 RecyclerView recyclerView;
                 RecyclerAdapter recyclerAdapter;
